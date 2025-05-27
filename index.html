@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моето портфолио - Антонио Иванов</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .intro-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .intro-container {
+            flex: 1 1 400px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .intro-container:hover {
+            transform: scale(1.02);
+        }
+
+        .intro-container h1 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        .intro-container p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .intro-emoji {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .profile-image {
+            flex: 1 1 300px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-image img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #0077cc;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .intro-container {
+                text-align: center;
+            }
+
+            .profile-image {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="skills.html">Умения и проекти</a></li>
+                <li><a href="hobbies.html">Интереси и хоби</a></li>
+                <li><a href="gallery.html">Галерия</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro-wrapper">
+            <div class="intro-container">
+                <div class="intro-emoji">👋💻📚</div>
+                <h1>Здравей и добре дошъл в моето портфолио!</h1>
+                <p>
+                    Казвам се <strong>Антонио Иванов</strong>. Завършвам 11 клас в 📍 ПМГ „Иван Вазов“, гр. Димитровград.
+                    <br><br>
+                    Това е моят личен уебсайт, където ще откриеш информация за моите умения, интереси, проекти и галерия.
+                </p>
+            </div>
+
+            <div class="profile-image">
+                <img src="images/antonio.jpg" alt="Антонио Иванов">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Антонио Иванов</p>
+    </footer>
+</body>
+</html>
